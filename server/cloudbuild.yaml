@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/<your-project-id>/<your-image-name>', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/<your-project-id>/<your-image-name>']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['run', 'deploy', '<your-service-name>', '--image', 'gcr.io/<your-project-id>/<your-image-name>', '--region', '<your-region>', '--platform', 'managed']
