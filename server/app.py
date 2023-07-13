@@ -18,7 +18,7 @@ def post_location():
     logging.info(f'request received {request.get_json()}')
     if request.is_json:
         data = request.get_json()
-        logging.info(f'data received {data} {type(data)}') )
+        logging.info(f'data received {data} type : {type(data)}') 
         if 'lat' in data and 'lng' in data and 'bearing' in data or 'driver_id' in data:
             data_stack.append(data)  # Add the data to the stack
             return jsonify({"success": True, "message": "Data stored successfully."}), 200
