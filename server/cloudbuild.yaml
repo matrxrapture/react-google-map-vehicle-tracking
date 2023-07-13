@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/<your-project-id>/<your-image-name>', '.']
+  args: ['build', '-t', 'gcr.io/reliable-mender-348402/joy_server', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/<your-project-id>/<your-image-name>']
+  args: ['push', 'gcr.io/reliable-mender-348402/joy_server']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', '<your-service-name>', '--image', 'gcr.io/<your-project-id>/<your-image-name>', '--region', '<your-region>', '--platform', 'managed']
+  args: ['run', 'deploy', '<your-service-name>', '--image', 'gcr.io/reliable-mender-348402/joy_server', '--region', '<your-region>', '--platform', 'managed']
