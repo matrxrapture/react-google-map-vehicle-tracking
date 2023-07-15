@@ -10,7 +10,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 function App() {
   
-  const { data: paths} = useFetch('https://61a4a0604c822c0017041d33.mockapi.io/shuttle/v1/path');
+  const { data: paths} = useFetch('https://joy-driver-tracking-server-gb6dkzvuza-uc.a.run.app/api/get_latest_location');
   // const  { data: paths}  = Array.from(data).map(data)
   const { data: stops } = useFetch('https://61a4a0604c822c0017041d33.mockapi.io/shuttle/v1/stops');
   const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${config.mapsKey}`;
