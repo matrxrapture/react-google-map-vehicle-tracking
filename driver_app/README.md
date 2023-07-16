@@ -1,0 +1,1 @@
+For detailed explanation on how things work, check out [ReactNative docs](https://reactnative.dev/).
