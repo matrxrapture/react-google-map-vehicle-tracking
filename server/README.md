@@ -60,3 +60,11 @@ curl -H "Authorization: Bearer $(gcloud auth print-identity-token), Content-type
   "longitude": 144.9584,
   "bearing": -315
  }
+
+
+
+
+ docker login  us-central1-docker.pkg.dev  
+
+ docker tag joy-driver-tracking-server-img  us-central1-docker.pkg.dev/reliable-mender-348402/joy-imgs/joy-driver-tracking-server-img:latest
+ docker push us-central1-docker.pkg.dev/reliable-mender-348402/joy-imgs/joy-driver-tracking-server-img:latest

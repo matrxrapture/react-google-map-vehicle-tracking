@@ -3,3 +3,5 @@ google-cloud-pubsub
 gunicorn
 google-apitools
 protobuf
+flask-cors
+pyproj

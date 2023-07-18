@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  button {
+    width: 138px;
+    height: 140px;
+    background-color: skyblue;
+    color: darkred;
+    font-weight: bolder;
+    border-block: none;
+  }
